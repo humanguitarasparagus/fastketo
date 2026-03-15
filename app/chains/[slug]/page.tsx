@@ -1,28 +1,38 @@
 import { notFound } from 'next/navigation';
 import { getChainBySlug } from '@/data';
 import { KetoRating, MenuItem } from '@/lib/types';
+import { KetoRatingBadge } from '@/components/KetoRatingBadge'
 
-function KetoRatingBadge({ rating }: { rating: KetoRating }) {
-  const badgeClass = {
-    excellent: 'badge-excellent',
-    good: 'badge-good',
-    moderate: 'badge-moderate',
-    avoid: 'badge-avoid',
-  }[rating];
-
-  const stars = {
-    excellent: '⭐⭐⭐⭐⭐',
-    good: '⭐⭐⭐⭐',
-    moderate: '⭐⭐⭐',
-    avoid: '⭐',
-  }[rating];
-
-  return (
-    <span className={`badge ${badgeClass}`}>
-      {stars} {rating.charAt(0).toUpperCase() + rating.slice(1)}
-    </span>
-  );
+// Generate JSON-LD structured data for SEO
+function generateChainSchema(chain: any, faqs: any[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      // Restaurant schema
+      {
+        '@type': 'Restaurant',
+        name: chain.name,
+        url: `https://fastketo.co/chains/${chain.slug}`,
+        description: chain.description,
+        servesCuisine: 'Fast Food',
+        priceRange: '£',
+      },
+      // FAQPage schema
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqs.map(faq => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
+  };
 }
+
 
 function MenuItemCard({ item }: { item: MenuItem }) {
   return (
@@ -95,7 +105,44 @@ function MenuItemCard({ item }: { item: MenuItem }) {
     </div>
   );
 }
+// Generate metadata for each chain page
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> 
+}) {
+  const { slug } = await params;
+  const chain = getChainBySlug(slug);
 
+  if (!chain) {
+    return {
+      title: 'Chain Not Found',
+      description: 'This keto fast food chain could not be found.',
+    };
+  }
+
+  const lowestCarbs = Math.min(...chain.items.map((i) => i.nutrition.netCarbs));
+
+  return {
+    title: `Keto at ${chain.name} UK - Low Carb Guide | FastKeto`,
+    description: `${chain.description.substring(0, 150)}... Best option: ${lowestCarbs}g net carbs. UK-specific nutrition data and ordering tips.`,
+    keywords: [
+      `${chain.name} keto`,
+      `${chain.name} low carb`,
+      `keto ${chain.name} uk`,
+      'keto fast food uk',
+      `${chain.name} carbs`,
+    ],
+    openGraph: {
+      title: `Keto Options at ${chain.name} UK`,
+      description: chain.description,
+      url: `https://fastketo.co/chains/${chain.slug}`,
+      siteName: 'FastKeto UK',
+      locale: 'en_GB',
+      type: 'article',
+    },
+  };
+}
 export default async function ChainPage({ 
   params 
 }: { 
@@ -134,8 +181,15 @@ export default async function ChainPage({
     },
   ];
 
-  return (
+    return (
     <div>
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateChainSchema(chain, faqs)),
+        }}
+      />
       {/* Header */}
       <section className="bg-gradient-to-b from-primary-50 to-white py-12">
         <div className="container-custom">

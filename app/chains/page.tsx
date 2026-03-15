@@ -14,9 +14,15 @@ export default function ChainsPage() {
             className="card hover:shadow-md transition-shadow duration-200"
           >
             <div className="flex items-center space-x-4 mb-4">
-              <div className="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center text-2xl flex-shrink-0">
-                {chain.name.charAt(0)}
-              </div>
+             <div 
+  className="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-2xl font-bold shadow-sm"
+  style={{ 
+    backgroundColor: chain.brandColor || '#f5f5f5',
+    color: chain.brandColor ? '#fff' : '#333'
+  }}
+>
+  {chain.name.charAt(0)}
+</div>
               <div>
                 <h2 className="font-bold text-lg text-neutral-900">{chain.name}</h2>
                 <p className="text-sm text-neutral-600">{chain.items.length} keto options</p>

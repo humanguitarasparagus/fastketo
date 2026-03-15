@@ -44,10 +44,9 @@ export default function RootLayout({
         <nav className="border-b border-neutral-200 bg-white">
           <div className="container-custom py-4">
             <div className="flex items-center justify-between">
-              <a href="/" className="flex items-center space-x-2">
-                <span className="text-2xl font-bold text-primary-500">FastKeto</span>
-                <span className="text-sm text-neutral-500">UK</span>
-              </a>
+             <a href="/" className="flex items-center space-x-2">
+  <img src="/images/fastketo-logo.png" alt="FastKeto" className="h-14" />
+</a>
               <div className="flex items-center space-x-6">
                 <a href="/chains" className="text-neutral-700 hover:text-primary-500 transition-colors">
                   Chains
