@@ -48,6 +48,8 @@ export interface Chain {
   categories: MenuCategory[];
   topPicks: string[]; // Array of item IDs
   items: MenuItem[];
+   faqs?: FAQ[]; 
+  howToOrder?: string;
 }
 
 export interface FAQ {
