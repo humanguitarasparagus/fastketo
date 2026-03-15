@@ -1,0 +1,22 @@
+Chain Name,Item Name,Category,Serving Size,Calories,Total Carbs,Fiber,Net Carbs (AUTO),Protein,Total Fat,Saturated Fat,Sugar,Sodium,Price Range,Customization,Pro Tip 1,Pro Tip 2,Pro Tip 3,Keto Rating,Allergens,Availability,Source URL,Verified Date
+McDonald's,Big Mac (No Bun),burgers,1 burger,330,8,2,=F2-G2,24,25,10,5,850,£3-4,"Order without the bun. Ask for extra lettuce to use as a wrap, or eat with knife and fork. Request no Big Mac sauce for even lower carbs.",Ask for extra pickles and cheese for more flavour,The special sauce contains some sugar - ask for it on the side if you want to control portions,Comes to about £3.50 - good value for a keto meal,excellent,"milk, eggs, soy, wheat (trace)",all-day,https://www.mcdonalds.com/gb/en-gb/product/big-mac.html,2026-01-15
+McDonald's,Quarter Pounder with Cheese (No Bun),burgers,1 burger,350,9,2,=F3-G3,26,27,12,6,920,£4-5,Order without the bun and without ketchup (contains sugar). Ask for extra pickles.,Skip the ketchup to save 2-3g carbs,Larger portion than Big Mac - more filling,Great protein-to-carb ratio,excellent,"milk, soy, wheat (trace)",all-day,https://www.mcdonalds.com/gb/en-gb.html,2026-01-15
+McDonald's,Sausage & Egg McMuffin (No Muffin),breakfast,1 serving,280,4,0,=F4-G4,18,22,9,1,680,£2-3,Order the Sausage & Egg McMuffin without the muffin. Simple and staff usually accommodate this easily.,Perfect keto breakfast option,Just 4g net carbs - very clean,Ask for extra cheese if you want more fat,excellent,"milk, eggs, soy",breakfast,https://www.mcdonalds.com/gb/en-gb.html,2026-01-15
+
+INSTRUCTIONS FOR USE:
+1. Copy this entire sheet to Google Sheets
+2. The "Net Carbs (AUTO)" column has a formula: =F2-G2 (Total Carbs - Fiber)
+3. Categories: breakfast, burgers, chicken, salads, sides, drinks, desserts
+4. Keto Rating: excellent (0-5g), good (6-10g), moderate (11-15g), avoid (15g+)
+5. Availability: all-day, breakfast, lunch, dinner
+6. Fill in at least 3 items per chain before converting to code
+7. Keep Pro Tips short and practical (one tip per column)
+8. Price Range: Use £ symbol and range (e.g. £3-4)
+9. Source URL: Link to nutrition calculator or menu page
+10. Verified Date: Today's date in YYYY-MM-DD format
+
+QUICK REFERENCE:
+- Net Carbs = Total Carbs - Fiber
+- Keto-friendly = Under 10g net carbs
+- Always verify from official sources
+- Screenshot nutrition info for records

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+  }
+}
+
+@layer components {
+  /* Reusable component styles */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-neutral-50 text-primary-600 font-medium py-2 px-4 rounded-lg border border-primary-200 transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-neutral-200 p-6;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-excellent {
+    @apply bg-success/10 text-success;
+  }
+
+  .badge-good {
+    @apply bg-primary-500/10 text-primary-700;
+  }
+
+  .badge-moderate {
+    @apply bg-accent-500/10 text-accent-700;
+  }
+
+  .badge-avoid {
+    @apply bg-red-100 text-red-700;
+  }
+}

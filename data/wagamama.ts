@@ -1,0 +1,318 @@
+import { Chain } from '@/lib/types';
+
+export const wagamamaData: Chain = {
+  id: 'wagamama',
+  name: 'Wagamama',
+  slug: 'wagamama',
+  logo: '/logos/wagamama.svg',
+  description: "Wagamama is the most challenging sit-down chain for keto. The menu is built around noodles, rice, and broths - these aren't removable. But there's one standout: Sirloin & Shiitake Salad (11g carbs, 53g protein). Plus hidden gems like Tea-Stained Egg (0.9g carbs) most people don't think to order.",
+  ketoFriendly: 'moderate',
+  website: 'https://www.wagamama.com',
+  brandColor: '#D0021B',
+  menuLastUpdated: '2026-01-01',
+  categories: ['salads'],
+  howToOrder: `🥗 ORDER FROM SALADS (not the main menu):
+Most people treat salads as sides at Wagamama - for keto, they're your MAINS.
+
+🥩 THE PERFECT WAGAMAMA KETO MEAL:
+1. Main: Sirloin & Shiitake Salad (11g carbs, 53g protein)
+2. Add: Tea-Stained Egg (0.9g carbs, 7.4g protein) - hidden gem!
+3. Side: Wok Fried Greens (8.6g carbs)
+4. Extras: Kimchee (2.8g) + Miso Soup (3.4g)
+5. Total: ~26g carbs, ~59g protein - full table experience
+
+🍗 CRITICAL TRAP - CHICKEN YAKITORI:
+Looks like plain grilled chicken but teriyaki glaze = 24.8g carbs (10g pure sugar). Skip it!
+
+⚠️ SKIP THE ENTIRE MAIN MENU:
+- All Ramen: 67-100g carbs (wheat noodles)
+- All Teppanyaki: 61-162g carbs (noodles)
+- All Donburi: 56-135g carbs (sticky rice)
+- All Curries: 107-163g carbs (katsu sauce + rice)
+- All Gyoza: 24-33g carbs (wrapper)
+- All Bao: 43g+ carbs (steamed bun)
+
+🔧 NOODLE SUBSTITUTION (ask, not guaranteed):
+Some managers will swap noodles for beansprouts in teppanyaki - not official but worth asking.`,
+  topPicks: ['sirloin-shiitake-salad', 'pad-thai-salad', 'tea-stained-egg'],
+  items: [
+    {
+      id: 'sirloin-shiitake-salad',
+      chainId: 'wagamama',
+      name: 'Sirloin & Shiitake Salad',
+      category: 'salads',
+      description: 'THE keto winner at Wagamama - marinated steak, mixed leaves, Asian slaw, yuzu dressing',
+      customization: 'Order as-is. Check menu before visiting - this rotates seasonally.',
+      nutrition: {
+        servingSize: '1 salad',
+        calories: 420,
+        protein: 53,
+        totalFat: 19,
+        saturatedFat: 5,
+        totalCarbs: 11,
+        fiber: 4,
+        netCarbs: 7,
+        sugar: 8,
+        sodium: 1180,
+      },
+      ketoRating: 'excellent',
+      allergens: ['soya', 'sesame'],
+      tips: [
+        'Only 11g carbs with 53g protein - outstanding macros',
+        'One of the best keto mains across ALL chains on FastKeto',
+        'Menu rotates seasonally - confirm availability before visiting',
+      ],
+      availability: 'all-day',
+      priceRange: '£12-14',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'pad-thai-salad',
+      chainId: 'wagamama',
+      name: 'Pad Thai Salad',
+      category: 'salads',
+      description: 'Rice noodle-free version of Pad Thai - genuinely good backup option',
+      customization: 'Order as-is. This is the salad version, not the noodle dish.',
+      nutrition: {
+        servingSize: '1 salad',
+        calories: 380,
+        protein: 21,
+        totalFat: 18,
+        saturatedFat: 3,
+        totalCarbs: 17,
+        fiber: 5,
+        netCarbs: 12,
+        sugar: 12,
+        sodium: 920,
+      },
+      ketoRating: 'good',
+      allergens: ['peanuts', 'soya', 'eggs'],
+      tips: [
+        '17.1g total carbs - comfortable on 50g daily budget',
+        'Not the noodle Pad Thai (which is 70g+ carbs)',
+        'Good if Sirloin & Shiitake unavailable',
+      ],
+      availability: 'all-day',
+      priceRange: '£10-12',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'warm-chilli-chicken-salad',
+      chainId: 'wagamama',
+      name: 'Warm Chilli Chicken Salad',
+      category: 'salads',
+      description: 'High fat option - borderline on strict 20g, fine on 50g',
+      customization: 'Order as-is.',
+      nutrition: {
+        servingSize: '1 salad',
+        calories: 480,
+        protein: 28,
+        totalFat: 33,
+        saturatedFat: 6,
+        totalCarbs: 19,
+        fiber: 4,
+        netCarbs: 15,
+        sugar: 13,
+        sodium: 1080,
+      },
+      ketoRating: 'good',
+      allergens: ['soya', 'sesame'],
+      tips: [
+        '19g carbs - tight for strict 20g, fine on 50g budget',
+        'High fat (33g) - good for keto macros',
+        'Decent protein (28g)',
+      ],
+      availability: 'all-day',
+      priceRange: '£10-12',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'tea-stained-egg',
+      chainId: 'wagamama',
+      name: 'Tea-Stained Egg',
+      category: 'salads',
+      description: 'Hidden gem - near-zero carb protein boost most people don\'t order',
+      customization: 'Add to any meal. Can be ordered as standalone extra.',
+      nutrition: {
+        servingSize: '1 egg',
+        calories: 90,
+        protein: 7,
+        totalFat: 7,
+        saturatedFat: 2,
+        totalCarbs: 1,
+        fiber: 0,
+        netCarbs: 1,
+        sugar: 1,
+        sodium: 180,
+      },
+      ketoRating: 'excellent',
+      allergens: ['eggs'],
+      tips: [
+        'Just 0.9g carbs, 7.4g protein',
+        'Most people don\'t think to order this',
+        'Perfect protein top-up for any meal',
+      ],
+      availability: 'all-day',
+      priceRange: '£2-3',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'wok-fried-greens',
+      chainId: 'wagamama',
+      name: 'Wok Fried Greens',
+      category: 'salads',
+      description: 'Bok choy and snap peas with garlic/soy - solid keto side',
+      customization: 'Order as side dish.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 140,
+        protein: 4,
+        totalFat: 11,
+        saturatedFat: 2,
+        totalCarbs: 9,
+        fiber: 3,
+        netCarbs: 6,
+        sugar: 5,
+        sodium: 520,
+      },
+      ketoRating: 'excellent',
+      allergens: ['soya'],
+      tips: [
+        '8.6g total carbs',
+        'Good vegetable side option',
+        'Pairs well with protein-heavy mains',
+      ],
+      availability: 'all-day',
+      priceRange: '£4-5',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'kimchee',
+      chainId: 'wagamama',
+      name: 'Kimchee',
+      category: 'salads',
+      description: 'Excellent low-carb condiment/side',
+      customization: 'Add to any meal for flavor and probiotics.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 20,
+        protein: 1,
+        totalFat: 0,
+        saturatedFat: 0,
+        totalCarbs: 3,
+        fiber: 1,
+        netCarbs: 2,
+        sugar: 2,
+        sodium: 380,
+      },
+      ketoRating: 'excellent',
+      allergens: [],
+      tips: [
+        'Just 2.8g carbs',
+        'Fermented - good for gut health',
+        'Adds flavor to simple dishes',
+      ],
+      availability: 'all-day',
+      priceRange: '£2-3',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'miso-soup',
+      chainId: 'wagamama',
+      name: 'Miso Soup + Japanese Pickles',
+      category: 'salads',
+      description: 'Warm starter for essentially zero carbs',
+      customization: 'Good way to start meal.',
+      nutrition: {
+        servingSize: '1 bowl',
+        calories: 35,
+        protein: 3,
+        totalFat: 1,
+        saturatedFat: 0,
+        totalCarbs: 3,
+        fiber: 1,
+        netCarbs: 2,
+        sugar: 2,
+        sodium: 680,
+      },
+      ketoRating: 'excellent',
+      allergens: ['soya', 'fish'],
+      tips: [
+        'Only 3.38g carbs',
+        'Warm, comforting starter',
+        'Essentially negligible carbs',
+      ],
+      availability: 'all-day',
+      priceRange: '£3-4',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+    {
+      id: 'edamame-salt',
+      chainId: 'wagamama',
+      name: 'Edamame with Salt',
+      category: 'salads',
+      description: 'High plant protein - borderline but fine on 50g budget',
+      customization: 'Order as starter or side.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 180,
+        protein: 26,
+        totalFat: 10,
+        saturatedFat: 1,
+        totalCarbs: 13,
+        fiber: 8,
+        netCarbs: 5,
+        sugar: 3,
+        sodium: 820,
+      },
+      ketoRating: 'good',
+      allergens: ['soya'],
+      tips: [
+        '13g total carbs but 8g fibre = 5g net',
+        'Very high plant protein (26g)',
+        'Borderline on strict 20g, fine on 50g',
+      ],
+      availability: 'all-day',
+      priceRange: '£4-5',
+      verified: true,
+      verifiedDate: '2026-01-01',
+      source: 'Wagamama UK nutritional data 2026',
+    },
+  ],
+  faqs: [
+    {
+      question: "What can I eat at Wagamama on keto?",
+      answer: "Salads are your mains (not sides). Best order: Sirloin & Shiitake Salad (11g carbs, 53g protein) + Tea-Stained Egg (0.9g) + Wok Fried Greens. Skip the entire main menu - all ramen, teppanyaki, donburi, and curries are 56-163g carbs."
+    },
+    {
+      question: "Can I order ramen or teppanyaki without noodles?",
+      answer: "Not officially, but some managers will substitute noodles for beansprouts in teppanyaki dishes if you ask. This is not a guaranteed menu option, but worth trying. All ramen and teppanyaki as-served are 61-100g+ carbs."
+    },
+    {
+      question: "Is Chicken Yakitori keto-friendly?",
+      answer: "No - this is the biggest Wagamama keto trap! It looks like plain grilled chicken but the teriyaki glaze is 24.8g carbs (10g pure sugar). Many keto guides list it as safe - it's not. Skip it."
+    },
+    {
+      question: "What's the Tea-Stained Egg?",
+      answer: "A hidden keto gem most people don't order - it's 0.9g carbs and 7.4g protein. Add it to any meal as a protein boost. Can be ordered as a standalone extra."
+    },
+    {
+      question: "Does Wagamama's menu change?",
+      answer: "Yes - seasonally. The Sirloin & Shiitake Salad has been on and off the menu over the years. If it's your main reason for visiting, check the current menu on the Wagamama app or website first."
+    },
+  ],
+};

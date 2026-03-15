@@ -1,0 +1,334 @@
+import { Chain } from '@/lib/types';
+
+export const yosushiData: Chain = {
+  id: 'yosushi',
+  name: 'YO! Sushi',
+  slug: 'yosushi',
+  logo: '/logos/yosushi.svg',
+  description: "YO! Sushi is excellent for keto if you ignore the conveyor belt. Treat it like Japanese tapas, not a sushi restaurant. Order sashimi + hot dishes without rice. CRITICAL: Sashimi (0.8g) vs Nigiri (14g per piece) - they look identical but Nigiri has rice underneath. The spinach poké base (0.8g) is a hidden gem.",
+  ketoFriendly: 'good',
+  website: 'https://yosushi.com',
+  brandColor: '#E20714',
+  menuLastUpdated: '2024-09-01',
+  categories: ['salads', 'chicken'],
+  howToOrder: `🍣 THE YO! SUSHI KETO STRATEGY:
+
+**IGNORE THE CONVEYOR BELT**
+The belt is your enemy - it's all sushi rolls with rice (25-55g carbs per plate). Order from the menu specifically.
+
+🎯 PERFECT KETO ORDER:
+Tell your server: "I'm avoiding rice"
+Then build from:
+1. Sashimi section (salmon 0.8g, tuna 0.9g)
+2. Hot dishes section (Chicken Yakitori 10.6g)
+3. Sides (Soy Egg 0.4g, Miso Soup 6.7g)
+
+🏆 IDEAL COMBINATION:
+- Salmon Sashimi (0.8g)
+- Tuna Sashimi (0.9g)
+- Chicken Yakitori (10.6g)
+- Soy Egg (0.4g)
+- Miso Soup (6.7g)
+Total: ~25g carbs, 71g protein!
+
+⚠️ CRITICAL - NIGIRI VS SASHIMI:
+- SASHIMI = raw fish, NO rice (0.8-0.9g carbs) ✅
+- NIGIRI = raw fish ON rice (14g carbs PER PIECE) ❌
+They look almost identical but Nigiri has a rice mound underneath. This is the #1 ordering mistake - getting this wrong multiplies carbs by 17x!
+
+🥗 HIDDEN GEM - SPINACH POKÉ BASE:
+Ask for poké bowl with SPINACH BASE (0.8g) instead of rice base (70g+). With Dynamite Salmon topping + Sriracha Mayo = ~18g total carbs.
+
+✅ SAFE HOT DISHES (no rice):
+- Chicken Yakitori (10.6g)
+- Chicken Teriyaki (12.7g)
+- Cod & Shiso Tempura (9.4g)
+These are served WITHOUT rice as individual portions.
+
+❌ SKIP:
+- All sushi rolls (25-55g)
+- All nigiri (14g per piece - has rice!)
+- All Large Bowls (97-164g - rice base)
+- Ramen/Yakisoba (47-55g - noodles)`,
+  topPicks: ['salmon-sashimi', 'chicken-yakitori', 'tuna-sashimi'],
+  items: [
+    {
+      id: 'salmon-sashimi',
+      chainId: 'yosushi',
+      name: 'Salmon Sashimi',
+      category: 'salads',
+      description: 'THE cleanest keto item - raw salmon, no rice, omega-3 rich',
+      customization: 'Order from menu, not from conveyor belt. This is pure fish, no rice.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 160,
+        protein: 12,
+        totalFat: 14,
+        saturatedFat: 3,
+        totalCarbs: 1,
+        fiber: 0,
+        netCarbs: 1,
+        sugar: 0,
+        sodium: 180,
+      },
+      ketoRating: 'excellent',
+      allergens: ['fish'],
+      tips: [
+        'Just 0.8g carbs - near-zero',
+        'Rich omega-3 fats',
+        'NOT the same as Salmon Nigiri (which has rice = 14g carbs)',
+      ],
+      availability: 'all-day',
+      priceRange: '£5-7',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'tuna-sashimi',
+      chainId: 'yosushi',
+      name: 'Tuna Sashimi',
+      category: 'salads',
+      description: 'Highest protein sashimi - very lean, near-zero carbs',
+      customization: 'Order from menu. Pure tuna, no rice.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 90,
+        protein: 20,
+        totalFat: 1,
+        saturatedFat: 0,
+        totalCarbs: 1,
+        fiber: 0,
+        netCarbs: 1,
+        sugar: 0,
+        sodium: 160,
+      },
+      ketoRating: 'excellent',
+      allergens: ['fish'],
+      tips: [
+        'Just 0.9g carbs',
+        'Highest protein sashimi (19.6g)',
+        'Very lean - pair with fatty items like avocado',
+      ],
+      availability: 'all-day',
+      priceRange: '£5-7',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'chicken-yakitori',
+      chainId: 'yosushi',
+      name: 'Chicken Yakitori',
+      category: 'chicken',
+      description: 'Best hot keto item - grilled chicken skewers with teriyaki glaze',
+      customization: 'Served as individual portion WITHOUT rice. Only get rice if you order Large Bowl.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 220,
+        protein: 19,
+        totalFat: 12,
+        saturatedFat: 3,
+        totalCarbs: 11,
+        fiber: 0,
+        netCarbs: 11,
+        sugar: 7,
+        sodium: 680,
+      },
+      ketoRating: 'good',
+      allergens: ['soya', 'sesame'],
+      tips: [
+        '10.6g carbs - very manageable',
+        'Teriyaki glaze adds some carbs but worth it',
+        'Served WITHOUT rice as standard portion',
+      ],
+      availability: 'all-day',
+      priceRange: '£5-6',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'soy-egg',
+      chainId: 'yosushi',
+      name: 'Soy Egg',
+      category: 'salads',
+      description: 'Near-zero carbs - excellent add-on to any order',
+      customization: 'Add to any meal for extra protein.',
+      nutrition: {
+        servingSize: '1 egg',
+        calories: 50,
+        protein: 4,
+        totalFat: 3,
+        saturatedFat: 1,
+        totalCarbs: 0,
+        fiber: 0,
+        netCarbs: 0,
+        sugar: 0,
+        sodium: 220,
+      },
+      ketoRating: 'excellent',
+      allergens: ['eggs', 'soya'],
+      tips: [
+        'Just 0.4g carbs',
+        'Perfect protein boost',
+        'Add to any sashimi order',
+      ],
+      availability: 'all-day',
+      priceRange: '£2-3',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'miso-soup',
+      chainId: 'yosushi',
+      name: 'Miso Soup',
+      category: 'salads',
+      description: 'Warm, low-cal starter',
+      customization: 'Good way to start your meal.',
+      nutrition: {
+        servingSize: '1 bowl',
+        calories: 50,
+        protein: 3,
+        totalFat: 1,
+        saturatedFat: 0,
+        totalCarbs: 7,
+        fiber: 0,
+        netCarbs: 7,
+        sugar: 2,
+        sodium: 980,
+      },
+      ketoRating: 'excellent',
+      allergens: ['soya', 'fish'],
+      tips: [
+        '6.7g carbs',
+        'Only 50 calories',
+        'Traditional starter',
+      ],
+      availability: 'all-day',
+      priceRange: '£2-3',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'tuna-avocado-tartare',
+      chainId: 'yosushi',
+      name: 'Tuna & Avocado Tartare',
+      category: 'salads',
+      description: 'Tuna with avocado - good fat, clean protein',
+      customization: 'Order from menu.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 140,
+        protein: 12,
+        totalFat: 9,
+        saturatedFat: 2,
+        totalCarbs: 3,
+        fiber: 2,
+        netCarbs: 1,
+        sugar: 1,
+        sodium: 220,
+      },
+      ketoRating: 'excellent',
+      allergens: ['fish'],
+      tips: [
+        'Just 3.2g total carbs',
+        'Avocado adds healthy fats',
+        'More filling than plain sashimi',
+      ],
+      availability: 'all-day',
+      priceRange: '£6-8',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'chicken-teriyaki',
+      chainId: 'yosushi',
+      name: 'Chicken Teriyaki',
+      category: 'chicken',
+      description: 'Lean protein with teriyaki sauce - served without rice',
+      customization: 'Individual portion, no rice included.',
+      nutrition: {
+        servingSize: '1 portion',
+        calories: 180,
+        protein: 20,
+        totalFat: 7,
+        saturatedFat: 2,
+        totalCarbs: 13,
+        fiber: 0,
+        netCarbs: 13,
+        sugar: 7,
+        sodium: 720,
+      },
+      ketoRating: 'good',
+      allergens: ['soya', 'sesame'],
+      tips: [
+        '12.7g carbs from teriyaki sauce',
+        'Very lean protein (20g)',
+        'Fine on 50g budget',
+      ],
+      availability: 'all-day',
+      priceRange: '£5-6',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+    {
+      id: 'spinach-poke-salmon',
+      chainId: 'yosushi',
+      name: 'Dynamite Salmon Poké (Spinach Base)',
+      category: 'salads',
+      description: 'Hidden gem - spinach base instead of rice drops carbs dramatically',
+      customization: 'Ask for "spinach base" instead of rice base. Add Sriracha Mayo sauce.',
+      nutrition: {
+        servingSize: '1 bowl',
+        calories: 280,
+        protein: 15,
+        totalFat: 18,
+        saturatedFat: 3,
+        totalCarbs: 18,
+        fiber: 3,
+        netCarbs: 15,
+        sugar: 12,
+        sodium: 920,
+      },
+      ketoRating: 'good',
+      allergens: ['fish', 'eggs', 'soya'],
+      tips: [
+        '~18g carbs total with spinach base + Sriracha Mayo',
+        'Rice base would add 70g+ carbs',
+        'Spinach base is not prominently advertised - ask for it!',
+      ],
+      availability: 'all-day',
+      priceRange: '£8-10',
+      verified: true,
+      verifiedDate: '2024-09-01',
+      source: 'YO! Sushi Allergen & Nutritional PDF September 2024',
+    },
+  ],
+  faqs: [
+    {
+      question: "What's the difference between Sashimi and Nigiri?",
+      answer: "CRITICAL DISTINCTION: Sashimi = raw fish, NO rice (0.8-0.9g carbs). Nigiri = raw fish ON rice mound (14g carbs PER PIECE). They look almost identical but getting this wrong multiplies your carbs by 17x! Always order Sashimi for keto, never Nigiri."
+    },
+    {
+      question: "Can I eat from the conveyor belt?",
+      answer: "No - the belt is almost entirely sushi rolls with rice (25-55g carbs per plate). The conveyor belt is your enemy for keto. Order from the menu specifically - sashimi section and hot food section. Tell your server you're avoiding rice."
+    },
+    {
+      question: "What's the best keto order at YO! Sushi?",
+      answer: "Salmon Sashimi (0.8g) + Tuna Sashimi (0.9g) + Chicken Yakitori (10.6g) + Soy Egg (0.4g) + Miso Soup (6.7g) = ~25g carbs, 71g protein. One of the highest-protein keto meals across all chains."
+    },
+    {
+      question: "What's the spinach poké base?",
+      answer: "Hidden gem - ask for your poké bowl with SPINACH BASE (0.8g carbs) instead of rice base (70g+ carbs). With Dynamite Salmon topping + Sriracha Mayo = ~18g total. The spinach base isn't prominently advertised but it exists!"
+    },
+    {
+      question: "Are the hot dishes served with rice?",
+      answer: "Individual portions (Chicken Yakitori, Chicken Teriyaki, etc) are served WITHOUT rice. Rice only comes if you order a 'Large Bowl' version. Always order the standard portion for keto - it comes without rice automatically."
+    },
+  ],
+};
