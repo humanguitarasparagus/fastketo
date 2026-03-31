@@ -12,26 +12,12 @@ export const costaData: Chain = {
   brandColor: '#6F263D',
   menuLastUpdated: '2026-03-01',
   categories: ['breakfast'],
-  howToOrder: `☕ THE POURING CREAM HACK (Costa's best keto secret):
-1. Order a black Americano (any size)
-2. Ask for "a pot of pouring cream on the side"
-3. Costa keeps pouring cream behind the counter (used for desserts)
-4. Most stores provide it at no extra charge
-5. Cream is ~3g carbs per 100ml vs 5-10g for milk
-6. This is the go-to Costa order in UK keto communities
-
-🥛 FOR MILKY DRINKS:
-1. Choose coconut milk (lowest carb at ~2.5g per 100ml)
-2. Costa does NOT stock almond milk (unlike Starbucks)
-3. Soya is second-best option (~3-4g per 100ml)
-4. Skip oat milk (6-7g per 100ml)
-5. Order smallest size (Primo) to minimize carbs
-
-🍯 SUGAR-FREE SYRUPS:
-1. Ask for sugar-free vanilla, caramel, or hazelnut
-2. Not all stores stock all flavours - always ask first
-3. Sugar-free adds ~1-2g carbs vs 4-6g for regular syrups
-4. Never assume it's available - verify at counter`,
+ howToOrder: `1. Order any black coffee, Americano, or espresso-based drink — all are zero carbs as standard
+2. Ask for "pouring cream" instead of milk — Costa stocks it for porridge and will add it to coffee if you ask
+3. Choose unsweetened almond milk as a milk alternative if pouring cream isn't available
+4. Skip all syrups except sugar-free vanilla — it's the only sugar-free option Costa UK stocks
+5. Avoid all cold drinks, blended drinks, and hot chocolates — all are high carb
+6. Food options are limited — the Egg Protein Pot (2.5g carbs) is the only reliable keto choice`,
   topPicks: ['americano-black', 'americano-cream', 'cappuccino-coconut'],
   items: [
     {

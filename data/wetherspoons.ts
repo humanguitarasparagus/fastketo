@@ -12,64 +12,12 @@ export const wetherspoonsData: Chain = {
   brandColor: '#C8102E',
   menuLastUpdated: '2026-03-01',
   categories: ['burgers', 'chicken'],
-  howToOrder: `🍺 THE WETHERSPOONS KETO RULE:
-
-**ONE SIMPLE SWAP:**
-Always say: "Side salad instead of chips, please"
-- Menu explicitly notes this option
-- Staff are used to it
-- Costs nothing extra
-- Saves ~75g carbs!
-
-🏆 BEST KETO MEALS:
-
-**14oz Aberdeen Angus Rump Steak**
-- Side salad instead of chips
-- Garlic & parsley butter
-- Total: ~22g carbs, 90g protein
-- Best protein hit in this entire series!
-- ~£12-13 on Tuesday Steak Night
-
-**10oz Gammon with Eggs**
-- Side salad instead of chips
-- Peppercorn sauce
-- Total: ~20g carbs, 71g protein
-
-**Grilled Chicken Breast**
-- Side salad instead of chips
-- Peri-peri sauce
-- Total: ~8g carbs, 40g protein
-- Wednesday Chicken Club pricing
-
-✅ GRILL SECTION (always swap chips for salad):
-- All steaks (8oz sirloin, 8oz/14oz rump)
-- Gammon with eggs (5oz or 10oz)
-- Grilled chicken breast
-- Mixed grill (remove onion rings)
-
-✅ BREAKFAST BUILD (skip toast, hash browns, beans):
-- 2 fried eggs + 2 bacon + sausage + mushrooms + tomato
-- ~12-15g carbs, ~35g protein, ~£5-7
-
-✅ SAFE SAUCES:
-- Garlic & parsley butter (~1g) ⭐⭐
-- Peppercorn sauce (~4g)
-- Peri-peri sauce (~2g)
-
-❌ SKIP SAUCES:
-- Gravy (thickened - ~8-12g)
-- BBQ sauce (~8g)
-
-⚠️ MEDITERRANEAN SALAD TRAP:
-Sounds healthy but has 45g carbs (pearl barley, quinoa, wheat berries, butternut squash). Always choose plain side salad (5g) or coleslaw (3g) instead!
-
-📅 CLUB NIGHTS:
-- ✅ Tuesday: Steak Night (discounted steaks - perfect!)
-- ✅ Wednesday: Chicken Club (discounted chicken - perfect!)
-- ❌ Thursday: Curry Club (all served with rice & naan - skip entirely)
-
-🎯 THE CORE RULE:
-Chips are the default side (~75g carbs). Side salad is always available. Master this swap and Wetherspoons becomes one of the best keto pubs in the UK.`,
+howToOrder: `1. Order the rump steak — 90g protein and one of the best value keto meals in the UK at under £10
+2. ALWAYS swap chips for a side salad — ask your server when ordering, it's a standard swap
+3. Choose any grilled meat or fish from the main menu — all are keto-safe before sides
+4. Ask for sauces on the side — the peppercorn and stilton sauces are lower carb than ketchup or gravy
+5. Breakfast is a strong keto option — full cooked breakfast without toast or beans
+6. Avoid all burgers in buns, pies, curries with rice, and the full mixed grill which includes onion rings`,
   topPicks: ['14oz-rump-steak', '10oz-gammon-eggs', 'grilled-chicken-breast'],
   items: [
     {

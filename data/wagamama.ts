@@ -12,29 +12,12 @@ export const wagamamaData: Chain = {
   brandColor: '#D0021B',
   menuLastUpdated: '2026-01-01',
   categories: ['salads'],
-  howToOrder: `🥗 ORDER FROM SALADS (not the main menu):
-Most people treat salads as sides at Wagamama - for keto, they're your MAINS.
-
-🥩 THE PERFECT WAGAMAMA KETO MEAL:
-1. Main: Sirloin & Shiitake Salad (11g carbs, 53g protein)
-2. Add: Tea-Stained Egg (0.9g carbs, 7.4g protein) - hidden gem!
-3. Side: Wok Fried Greens (8.6g carbs)
-4. Extras: Kimchee (2.8g) + Miso Soup (3.4g)
-5. Total: ~26g carbs, ~59g protein - full table experience
-
-🍗 CRITICAL TRAP - CHICKEN YAKITORI:
-Looks like plain grilled chicken but teriyaki glaze = 24.8g carbs (10g pure sugar). Skip it!
-
-⚠️ SKIP THE ENTIRE MAIN MENU:
-- All Ramen: 67-100g carbs (wheat noodles)
-- All Teppanyaki: 61-162g carbs (noodles)
-- All Donburi: 56-135g carbs (sticky rice)
-- All Curries: 107-163g carbs (katsu sauce + rice)
-- All Gyoza: 24-33g carbs (wrapper)
-- All Bao: 43g+ carbs (steamed bun)
-
-🔧 NOODLE SUBSTITUTION (ask, not guaranteed):
-Some managers will swap noodles for beansprouts in teppanyaki - not official but worth asking.`,
+howToOrder: `1. Order the Sirloin and Shiitake Salad — the standout keto dish on the menu
+2. Choose any grilled or steamed protein dish and ask for no rice or noodles
+3. Avoid the Chicken Yakitori skewers — the teriyaki glaze adds significant carbs despite looking keto
+4. Edamame is a safe starter at around 4g net carbs per portion
+5. Avoid all ramen, noodle dishes, rice bowls and bao buns — all are very high carb
+6. Ask about the current seasonal menu — wagamama rotates dishes and grilled options vary by season`,
   topPicks: ['sirloin-shiitake-salad', 'pad-thai-salad', 'tea-stained-egg'],
   items: [
     {

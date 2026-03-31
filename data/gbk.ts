@@ -12,52 +12,12 @@ export const gbkData: Chain = {
   brandColor: '#E31E24',
   menuLastUpdated: '2026-03-01',
   categories: ['burgers'],
-  howToOrder: `🍔 THE GBK KETO FORMULA:
-
-**JUST SAY "GO NAKED"**
-This is official GBK terminology - the kitchen knows exactly what it means. No awkward explaining needed!
-
-🔄 WHAT "GO NAKED" DOES:
-- Removes the bun (~35-40g carbs)
-- Replaces with: GBK Homeslaw + Simple Green Salad
-- Net result: ~10-18g carbs for most burgers (vs 40g+ with bun)
-
-⚠️ HOMESLAW IS NOT ZERO CARBS:
-- Homeslaw = ~9-14g carbs (pomegranate seeds are main contributor)
-- This is included in all GO NAKED estimates
-- It's manageable, just not free
-
-🏆 PERFECT KETO ORDER:
-Classic Double GO NAKED
-- Add: Cheddar, crispy bacon, jalapeños
-- Sauce: House mayo (NOT relish)
-- Total: ~10-13g carbs, 76g protein!
-
-✅ SAFE SAUCES (fat-based, low-carb):
-- House mayo (~1g)
-- Chipotle mayo (~3g)
-- Garlic mayo (~2g)
-- Blue cheese mayo (~2g)
-- Baconnaise (~2g)
-- Sriracha mayo (~2g)
-
-❌ SKIP THESE SAUCES (sugar-based):
-- GBK relish (~8g)
-- Habanero jam (~10g)
-- BBQ sauce (~8g)
-- Onion jam (~8g)
-These come on some burgers by default - ask to remove!
-
-🥩 THE BEEF QUALITY:
-100% British grass-fed beef, hand-selected chuck/brisket/short rib, 30-day dry-aged steak. This is genuinely premium - not frozen patties.
-
-✅ SAFE ADD-ONS:
-- Crispy bacon (~1g)
-- Cheese (~1g)
-- Smashed avocado (~2g)
-- Fried egg (~1g)
-- Jalapeños (~0g)
-- Dill pickle (~1g)`,
+  howToOrder: `1. Say "GO NAKED" when ordering — this is GBK's official term for a bunless burger served in a box
+2. Choose any burger on the menu — all patties are keto-safe without the bun
+3. Pick toppings freely: cheese, bacon, egg, avocado, jalapeños, lettuce, tomato, onion are all fine
+4. Skip all sauces except mayo, mustard, or hot sauce — ketchup and relishes are high sugar
+5. Choose a side salad or skip the side entirely — all potato sides are off limits
+6. The Notorious B.U.R.G.E.R. or Classic Beef are the best value naked builds`,
   topPicks: ['classic-double-naked', 'classic-cheese-naked', 'smashed-blue-naked'],
   items: [
     {

@@ -12,32 +12,12 @@ export const dominosData: Chain = {
   brandColor: '#0B648F',
   menuLastUpdated: '2026-02-01',
   categories: ['chicken'],
-  howToOrder: `🔑 THE SIMPLE STRATEGY: Order wings, ignore pizza
-
-📦 PERFECT KETO DOMINO'S ORDER:
-1. Order: 7 Chicken Wings (plain or Frank's Red Hot)
-2. Dip: Garlic & Herb Dip (NOT BBQ or Sweet Chilli)
-3. Optional side: Coleslaw
-4. Total: ~7.7g carbs, 38g protein, 48g fat
-5. Complete, satisfying keto meal delivered
-
-🍗 WING OPTIONS (ranked):
-✅ Best: Plain Chicken Wings (7) = 7.2g carbs
-✅ Great: Frank's Red Hot Wings (7) = 7.8g carbs (hot sauce adds 0.6g)
-⚠️ Borderline: Spicy BBQ Wings (7) = 19.6g carbs (BBQ glaze adds sugar)
-❌ Skip: Chicken Kickers = 27g carbs (breaded coating)
-
-🥫 DIP CHOICE IS CRITICAL:
-✅ ALWAYS: Garlic & Herb Dip = 0.5g carbs, 18.5g fat ⭐⭐
-✅ Good: Frank's Hot Dip = 1g carbs
-⚠️ Moderate: Honey & Mustard = 2.4g carbs
-❌ NEVER: BBQ Dip = 11.2g carbs (pure sugar)
-❌ NEVER: Sweet Chilli = 12.9g carbs (pure sugar)
-
-🍕 ABOUT THE PIZZA:
-Even Thin & Crispy is ~10g carbs PER SLICE. 2 slices = your entire strict daily budget on just crust. Pizza is off the table for keto, even gluten-free base.
-
-🎯 "Scrape toppings" strategy exists (order pizza, eat only toppings/cheese, bin crust = ~5-8g per slice worth) but it's wasteful. Only use in group orders where others eat the crust.`,
+howToOrder: `1. Order chicken wings or chicken strippers as your main keto option
+2. Choose Garlic & Herb dipping sauce — just 0.5g carbs per pot
+3. Add a side salad if available at your local store
+4. Skip all pizza bases including thin crust — even a single slice is 20g+ carbs
+5. Avoid BBQ, Sweet Chilli and Sour Cream & Chive dips — all are 10g+ carbs
+6. Delivery only strategy: wings plus Garlic & Herb dip is the complete keto order`,
   topPicks: ['chicken-wings-7', 'garlic-herb-dip', 'franks-wings-7'],
   items: [
     {

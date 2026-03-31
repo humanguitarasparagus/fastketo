@@ -12,27 +12,12 @@ export const starbucksData: Chain = {
   brandColor: '#00704A',
   menuLastUpdated: '2025-03-01',
   categories: ['breakfast'],
-  howToOrder: `⚠️ UK vs US DIFFERENCES (critical to know):
-1. Heavy cream is NOT reliably available at UK counters (unlike US)
-2. Only ONE sugar-free syrup in UK: vanilla (not caramel, hazelnut, etc)
-3. Iced teas come SWEETENED by default - must say "no classic syrup"
-
-🥛 MILK CHOICE:
-1. Almond milk is lowest-carb option (~4-5g per 100ml)
-2. Don't use oat milk - it's 9-10g carbs per 100ml
-3. Soya is good alternative if almond unavailable
-4. Always specify milk type - don't accept default
-
-☕ ORDERING DRINKS:
-1. Ask for "almond milk" explicitly
-2. Request "1 pump sugar-free vanilla" (not 4 pumps - standard is too much)
-3. For iced drinks: say "no classic syrup" or "unsweetened"
-4. Smaller sizes minimize milk carbs (Short/Tall better than Grande/Venti)
-
-🍳 FOOD:
-1. Egg bites are the only keto food worth ordering
-2. Check Starbucks app for availability - not all stores stock them
-3. Both varieties (Ham & Cheese, or Egg White with Pepper) are under 6g carbs`,
+howToOrder: `1. Order any espresso-based drink with no syrup — Americano, flat white, or latte with no sugar
+2. Ask for sugar-free vanilla syrup if you want flavour — it's the only sugar-free option at Starbucks UK
+3. Note that Starbucks UK does not stock heavy cream — use full fat milk or oat milk is not keto
+4. Choose the Sous Vide Egg Bites as your food option — the lowest carb item in the food range
+5. Avoid all Frappuccinos, chai lattes, and flavoured syrups — all are very high carb
+6. Cold brew black is a good zero-carb alternative to hot coffee in summer`,
   topPicks: ['egg-bites-ham-cheese', 'flat-white-almond', 'cappuccino-almond'],
   items: [
     {

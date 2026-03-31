@@ -12,38 +12,12 @@ export const tortillaData: Chain = {
   brandColor: '#E94E1B',
   menuLastUpdated: '2025-09-01',
   categories: ['chicken', 'salads'],
-  howToOrder: `🌮 THE TORTILLA KETO FORMULA:
-
-**ASK FOR:**
-1. Bowl or Salad (NOT burrito or wrap)
-2. Say "no rice, no beans"
-3. Choose your protein (Chicken Asado or Pork Carnitas best)
-4. Stack toppings freely - nearly all are keto-friendly!
-
-🏆 THE PROTEIN POT (hidden gem - ask for it!):
-- Double protein portion + 2 toppings of your choice
-- Chicken Asado Protein Pot = 3.1g carbs, 41.6g protein
-- Add guacamole (1.6g) + pico de gallo (2.4g)
-- Total: ~7.1g carbs, 41.6g protein
-- BEST keto item across ALL chains on FastKeto!
-
-✅ KETO-FRIENDLY TOPPINGS (stack these freely):
-- Monterey Jack Cheese (0g)
-- Guacamole (1.6g) - hand-smashed daily ⭐
-- Sour Cream (1.6g)
-- Pico de Gallo (2.4g)
-- Salsa Verde (2.0g)
-- Chipotle Cheese Sauce (1.4g)
-- Lettuce, onion & coriander, pickled onions (0.4-1.3g)
-
-❌ SKIP:
-- All wraps (36-52g carbs)
-- Rice (24-34g carbs)
-- Beans (15-18g - borderline on 50g, skip on 20g)
-- Tortilla chips (31g)
-
-💡 STAFF ARE USED TO CUSTOM BUILDS:
-This isn't unusual ordering at Tortilla - the format is designed for customization. Just say "bowl, no rice, no beans" and build from there.`,
+  howToOrder: `1. Order the Protein Pot — 7.1g carbs and 41.6g protein, the best keto fast food value in the UK
+2. Choose chicken, steak or carnitas as your protein — all are keto-safe
+3. Pick a bowl format instead of a burrito or wrap — skip all tortilla options
+4. Load with cheese, sour cream, guacamole, salsa and lettuce — all are keto-safe toppings
+5. Avoid rice and beans in your bowl — both add significant carbs
+6. The Protein Pot needs no modifications at all — it's built keto by default`,
   topPicks: ['protein-pot-chicken', 'chicken-asado-salad', 'carnitas-bowl'],
   items: [
     {

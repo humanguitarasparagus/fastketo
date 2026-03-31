@@ -12,29 +12,12 @@ export const leonData: Chain = {
   brandColor: '#FF6B00',
   menuLastUpdated: '2026-01-01',
   categories: ['breakfast', 'salads', 'chicken'],
-  howToOrder: `🔑 THE KEY: Order from SIDES, not the main menu
-
-Leon's main menu is rice boxes and wraps (45-65g carbs). The keto magic is in the SIDES section:
-
-🍗 BUILD YOUR OWN PLATE FROM SIDES:
-1. Order 2× Chargrilled Chicken Mezze (0.6g carbs each!)
-2. Add Leon Slaw (5.4g carbs)
-3. Add Kimchi (2.7g carbs)
-4. Total: ~9g carbs, ~45g protein, ~20g fat for under £15
-5. This is your best Leon keto meal - better than anything on the main menu
-
-🍳 FOR BREAKFAST (before 11am):
-1. Shakshuka is the star (6.4g carbs, perfect keto macros)
-2. Full English Pot or Big Breakfast Box if very hungry (11-13g carbs)
-3. Baked beans can't be removed but carbs still manageable
-
-🥗 FOR SALADS:
-1. Paprika Chicken Super Salad is best (19g total, ~11g net carbs)
-2. Grain mix can't be removed but high fibre brings net carbs down
-3. Chicken Caesar is simpler at 13g total
-
-⚠️ CRITICAL: "Gluten-Free" ≠ Low-Carb
-GFC Nuggets are gluten-free but still 20-25g carbs (rice flour coating). Don't be fooled by the GFC badge!`,
+ howToOrder: `1. Order the Chargrilled Chicken Mezze Box — just 0.6g carbs and the best keto item on the menu
+2. Choose any grilled chicken dish as your base — all are naturally low carb
+3. Ask for no flatbread with any mezze or wrap order
+4. Pick hummus and tabbouleh sides carefully — hummus is moderate carb, tabbouleh is lower
+5. Avoid all rice boxes, falafel, and superfood salads with grains
+6. Check the seasonal menu — Leon rotates dishes regularly and grilled protein options vary`,
   topPicks: ['chargrilled-chicken-mezze', 'shakshuka', 'paprika-chicken-salad'],
   items: [
     {

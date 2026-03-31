@@ -12,45 +12,12 @@ export const yosushiData: Chain = {
   brandColor: '#E20714',
   menuLastUpdated: '2024-09-01',
   categories: ['salads', 'chicken'],
-  howToOrder: `🍣 THE YO! SUSHI KETO STRATEGY:
-
-**IGNORE THE CONVEYOR BELT**
-The belt is your enemy - it's all sushi rolls with rice (25-55g carbs per plate). Order from the menu specifically.
-
-🎯 PERFECT KETO ORDER:
-Tell your server: "I'm avoiding rice"
-Then build from:
-1. Sashimi section (salmon 0.8g, tuna 0.9g)
-2. Hot dishes section (Chicken Yakitori 10.6g)
-3. Sides (Soy Egg 0.4g, Miso Soup 6.7g)
-
-🏆 IDEAL COMBINATION:
-- Salmon Sashimi (0.8g)
-- Tuna Sashimi (0.9g)
-- Chicken Yakitori (10.6g)
-- Soy Egg (0.4g)
-- Miso Soup (6.7g)
-Total: ~25g carbs, 71g protein!
-
-⚠️ CRITICAL - NIGIRI VS SASHIMI:
-- SASHIMI = raw fish, NO rice (0.8-0.9g carbs) ✅
-- NIGIRI = raw fish ON rice (14g carbs PER PIECE) ❌
-They look almost identical but Nigiri has a rice mound underneath. This is the #1 ordering mistake - getting this wrong multiplies carbs by 17x!
-
-🥗 HIDDEN GEM - SPINACH POKÉ BASE:
-Ask for poké bowl with SPINACH BASE (0.8g) instead of rice base (70g+). With Dynamite Salmon topping + Sriracha Mayo = ~18g total carbs.
-
-✅ SAFE HOT DISHES (no rice):
-- Chicken Yakitori (10.6g)
-- Chicken Teriyaki (12.7g)
-- Cod & Shiso Tempura (9.4g)
-These are served WITHOUT rice as individual portions.
-
-❌ SKIP:
-- All sushi rolls (25-55g)
-- All nigiri (14g per piece - has rice!)
-- All Large Bowls (97-164g - rice base)
-- Ramen/Yakisoba (47-55g - noodles)`,
+ howToOrder: `1. Ignore the conveyor belt — almost everything on it contains rice and is not keto-safe
+2. Order sashimi directly from the kitchen menu — salmon, tuna and prawn sashimi are all under 1g carbs
+3. Note the carb difference: sashimi is 0.5g carbs per plate, nigiri is 8-12g — a 17x difference
+4. Miso soup is a safe starter at 2-3g carbs
+5. Avoid all maki rolls, hand rolls, and nigiri — the rice is the problem, not the fish
+6. Ask staff for the paper menu to see sashimi options — they are not always visible on the belt`,
   topPicks: ['salmon-sashimi', 'chicken-yakitori', 'tuna-sashimi'],
   items: [
     {

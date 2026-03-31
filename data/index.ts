@@ -18,6 +18,7 @@ import { itsuData } from './itsu';
 import { yosushiData } from './yosushi';
 import { gbkData } from './gbk';
 import { wetherspoonsData } from './wetherspoons';
+import { harvester } from './harvester'
 
 // Export all chains here
 export const chains: Chain[] = [
@@ -42,7 +43,8 @@ export const chains: Chain[] = [
   itsuData,
   yosushiData,
   gbkData,
-  wetherspoonsData
+  wetherspoonsData,
+  harvester
   
   // etc.
 ];

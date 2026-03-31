@@ -12,37 +12,12 @@ export const itsuData: Chain = {
   brandColor: '#E31E24',
   menuLastUpdated: '2026-03-01',
   categories: ['salads', 'chicken'],
-  howToOrder: `🍜 THE itsu KETO STRATEGY:
-
-**GO STRAIGHT TO:**
-1. Soups section → Loaded Chicken Miso Soup (best choice)
-2. Sushi section → Salmon Sashimi (raw fish, no rice)
-3. Optional: Edamame (small pot as side)
-
-🏆 PERFECT KETO MEAL:
-- Loaded Chicken Miso Soup (3.7g carbs, 23g protein)
-- Salmon Sashimi (0.9g carbs, 20g protein)
-- Total: ~4.6g carbs, 43g protein, ~£10
-
-💰 PRO TIP - 5PM HALF-PRICE RULE:
-itsu discounts unsold food by 50% after 5pm (the "righteous" deal). Salmon Sashimi becomes £3-4 for 0.9g carbs and 20g protein - best-value keto meal in the UK!
-
-✅ SAFE SOUPS:
-- Miso Soup (3.7g)
-- Loaded Chicken Miso (3.7g) ⭐
-- King Prawn Miso (4.7g)
-
-✅ SAFE SASHIMI:
-- Salmon Sashimi (0.9g) ⭐⭐
-
-❌ SKIP EVERYTHING WITH:
-- Rice (all bowls, sushi, poké = 55-80g carbs)
-- Noodles (all noodle soups/bowls = 50-70g)
-- Gyoza wrappers (20-25g)
-- Bao buns (35g+)
-
-⚠️ "HEALTH HALO" TRAP:
-itsu positions as healthy eating, but "healthy" at itsu usually means brown rice or noodles (high carb). The miso soups and sashimi are where the keto case actually lies.`,
+  howToOrder: `1. Head straight to the sashimi section — salmon, tuna and mixed sashimi are all under 1g carbs
+2. Order miso soup as your starter — just 2-3g carbs and genuinely filling
+3. Avoid all nigiri, maki, and rolls — rice adds 15-25g carbs per serving
+4. Check the hot food section for gyoza alternatives — some grilled protein dishes are available
+5. Visit after 5pm for the "i'm off" deal — unsold food is reduced by 50%, making sashimi £3-4
+6. Avoid edamame if strictly tracking — 4g net carbs per portion adds up`,
   topPicks: ['loaded-chicken-miso', 'salmon-sashimi', 'king-prawn-miso'],
   items: [
     {

@@ -12,37 +12,12 @@ export const pizzahutData: Chain = {
   brandColor: '#EE3124',
   menuLastUpdated: '2025-11-01',
   categories: ['chicken', 'salads'],
-  howToOrder: `⚠️ CRITICAL: This is PIZZA HUT RESTAURANTS (dine-in) ONLY
-Pizza Hut Delivery has no salad bar and no viable keto options. This page applies to sit-down restaurants only.
-
-🔑 THE STRATEGY - Unlock the Free Salad Bar:
-1. Order Roasted Chicken Wings as your main (~0g carbs)
-2. This unlocks FREE UNLIMITED access to the salad bar
-3. Build your actual meal at the salad bar
-4. Wings are your protein vehicle, salad bar is your nutrition
-
-🥗 HOW TO BUILD YOUR SALAD BAR PLATE:
-✅ Load up on:
-- Fresh leaves (lettuce, spinach, rocket)
-- Cucumbers, peppers, cherry tomatoes
-- Jalapeños, roquito chilli peppers, black olives
-- BACON BITS (confirmed gluten-free, load these up!)
-- Blue cheese, ranch, garlic mayo, or sour cream dressing
-
-⚠️ Moderate/small amounts:
-- Red onions, carrots (small amounts)
-- Coleslaw (mayo base, reasonable)
-- Beetroot (~8g per tbsp - go easy)
-
-❌ Skip entirely:
-- Sweetcorn (~5g per tbsp)
-- Potato salad
-- Croutons, tortilla chips, crispy onions
-
-🍗 WING OPTIONS:
-Best: Roasted Chicken Wings (~0g carbs per wing)
-Good: BBQ Chicken Wings (~1.65g per wing)
-Borderline: Hot Honey BBQ Wings (~2-2.5g per wing - honey adds sugar)`,
+howToOrder: `1. Visit dine-in only — the unlimited salad bar is the keto strategy and is not available on delivery
+2. Go straight to the salad bar on arrival and build your plate with leaves, cucumber, peppers and protein toppings
+3. Avoid the pasta salad, croutons, sweetcorn and any pre-dressed mixed salads at the salad bar
+4. Order chicken wings as your main — they are the only keto-safe hot food item
+5. Skip all pizza including thin base — even one slice is 20g+ carbs
+6. Use the salad bar for multiple trips — it's unlimited and the real value of a Pizza Hut keto visit`,
   topPicks: ['roasted-chicken-wings', 'salad-bar', 'bbq-chicken-wings'],
   items: [
     {
