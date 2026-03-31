@@ -7,6 +7,7 @@ export const wagamamaData: Chain = {
   logo: '/logos/wagamama.svg',
   description: "Wagamama is the most challenging sit-down chain for keto. The menu is built around noodles, rice, and broths - these aren't removable. But there's one standout: Sirloin & Shiitake Salad (11g carbs, 53g protein). Plus hidden gems like Tea-Stained Egg (0.9g carbs) most people don't think to order.",
   ketoFriendly: 'moderate',
+  chainType: 'casual-dining',
   website: 'https://www.wagamama.com',
   brandColor: '#D0021B',
   menuLastUpdated: '2026-01-01',

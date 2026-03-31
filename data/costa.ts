@@ -7,6 +7,7 @@ export const costaData: Chain = {
   logo: '/logos/costa.svg',
   description: "Costa is a drinks-first chain for keto. Food is almost entirely off the table, but the drinks are excellent with two UK-specific wins: the pouring cream Americano (ask for a pot of pouring cream with your black Americano - Costa's best-kept keto secret) and Monin sugar-free syrups.",
   ketoFriendly: 'moderate',
+  chainType: 'cafes',
   website: 'https://www.costa.co.uk',
   brandColor: '#6F263D',
   menuLastUpdated: '2026-03-01',

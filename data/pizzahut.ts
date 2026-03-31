@@ -7,6 +7,7 @@ export const pizzahutData: Chain = {
   logo: '/logos/pizzahut.svg',
   description: "Pizza Hut UK Restaurants is better for keto than any guide suggests - but ONLY dine-in, and ONLY because of one thing: the free unlimited salad bar that comes with every main. Order Roasted Chicken Wings (0g carbs) to unlock the salad bar, then build your meal there. This is restaurants-only, not delivery.",
   ketoFriendly: 'good',
+  chainType: 'casual-dining',
   website: 'https://www.pizzahut.co.uk',
   brandColor: '#EE3124',
   menuLastUpdated: '2025-11-01',

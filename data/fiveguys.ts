@@ -7,6 +7,7 @@ export const fiveguysData: Chain = {
   logo: '/logos/fiveguys.svg',
   description: "Five Guys is exceptional for keto - second only to Nando's in the UK. Every burger can be ordered in a lettuce wrap (official menu item, not a hack), and all toppings are free. Build a premium keto burger under 5g carbs with zero menu gymnastics.",
   ketoFriendly: 'excellent',
+  chainType: 'fast-food',
   website: 'https://www.fiveguys.co.uk',
   brandColor: '#CC0000',
   menuLastUpdated: '2026-03-01',

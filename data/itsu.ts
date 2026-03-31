@@ -7,6 +7,7 @@ export const itsuData: Chain = {
   logo: '/logos/itsu.svg',
   description: "itsu is excellent for keto if you know what to order. Skip the rice, noodles, and sushi - head straight to the miso soups and sashimi. Loaded Chicken Miso Soup (3.7g carbs, 23g protein) + Salmon Sashimi (0.9g carbs, 20g protein) = 4.6g total carbs, 43g protein. Pro tip: 5pm half-price makes sashimi £3-4 - best-value keto in the UK.",
   ketoFriendly: 'good',
+  chainType: 'sushi',
   website: 'https://www.itsu.com',
   brandColor: '#E31E24',
   menuLastUpdated: '2026-03-01',

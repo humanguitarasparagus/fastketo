@@ -23,20 +23,16 @@ function generateHomeSchema() {
 
 // Search Bar Component with Autocomplete
 function SearchBar() {
-
-
   const [searchTerm, setSearchTerm] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  // Filter chains based on search term
   const filteredChains = searchTerm.length > 0
     ? chains.filter(chain =>
         chain.name.toLowerCase().includes(searchTerm.toLowerCase())
       )
     : []
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -47,13 +43,11 @@ function SearchBar() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  // Handle search input change
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value)
     setIsOpen(true)
   }
 
-  // Handle Enter key
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && filteredChains.length > 0) {
       window.location.href = `/chains/${filteredChains[0].slug}`
@@ -74,15 +68,13 @@ function SearchBar() {
           onKeyDown={handleKeyDown}
           className="w-full px-4 py-3 rounded-lg border border-white/30 bg-white/95 backdrop-blur focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
         />
-        
-        {/* Search icon */}
+
         <div className="absolute right-3 top-3 text-neutral-400">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
 
-        {/* Dropdown Results */}
         {isOpen && filteredChains.length > 0 && (
           <div className="absolute z-50 w-full mt-2 bg-white rounded-lg shadow-lg border border-neutral-200 max-h-96 overflow-y-auto">
             {filteredChains.map((chain) => (
@@ -110,7 +102,6 @@ function SearchBar() {
           </div>
         )}
 
-        {/* No results */}
         {isOpen && searchTerm.length > 0 && filteredChains.length === 0 && (
           <div className="absolute z-50 w-full mt-2 bg-white rounded-lg shadow-lg border border-neutral-200 px-4 py-6 text-center text-neutral-500">
             No chains found for "{searchTerm}"
@@ -122,9 +113,14 @@ function SearchBar() {
 }
 
 export default function Home() {
-  const topPicks = getTopPicks(6);
+  const topPicks = getTopPicks(6)
+  const [activeFilter, setActiveFilter] = useState('all')
 
-   return (
+  const filteredChains = activeFilter === 'all'
+    ? chains
+    : chains.filter(chain => chain.chainType === activeFilter)
+
+  return (
     <div>
       {/* JSON-LD Schema */}
       <script
@@ -133,33 +129,29 @@ export default function Home() {
           __html: JSON.stringify(generateHomeSchema()),
         }}
       />
+
       {/* Hero Section */}
       <section className="relative py-16 sm:py-24 overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <img
             src="/images/hero-bg.jpg"
-            alt="" 
+            alt=""
             className="w-full h-full object-cover"
           />
-          {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/65 via-neutral-900/45 to-neutral-900/65"></div>
         </div>
 
-        {/* Content (on top of background) */}
         <div className="container-custom text-center relative z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
             Keto Fast Food Made Simple
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-8">
-            Discover exactly what to order at your favourite UK fast food chains 
+            Discover exactly what to order at your favourite UK fast food chains
             while staying in ketosis. No guesswork, just carb counts.
           </p>
 
-          {/* Search with Autocomplete */}
           <SearchBar />
 
-          {/* Quick Stats */}
           <div className="flex justify-center space-x-8 text-sm">
             <div>
               <span className="text-white font-semibold">{chains.length}+</span>
@@ -239,24 +231,48 @@ export default function Home() {
           Browse by Chain
         </h2>
 
+        {/* Category Filter Badges */}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {[
+            { label: 'All', value: 'all' },
+            { label: 'Fast Food', value: 'fast-food' },
+            { label: 'Pub Chains', value: 'pub-chains' },
+            { label: 'Cafés', value: 'cafes' },
+            { label: 'Casual Dining', value: 'casual-dining' },
+            { label: 'Sushi', value: 'sushi' },
+          ].map((cat) => (
+            <button
+              key={cat.value}
+              onClick={() => setActiveFilter(cat.value)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+                activeFilter === cat.value
+                  ? 'bg-primary-600 text-white'
+                  : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {chains.map((chain) => (
+          {filteredChains.map((chain) => (
             <Link
               key={chain.id}
               href={`/chains/${chain.slug}`}
               className="card text-center hover:shadow-md transition-shadow duration-200 group"
             >
               <div className="mb-3">
-  <div 
-    className="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-2xl font-bold shadow-sm"
-    style={{ 
-      backgroundColor: chain.brandColor || '#f5f5f5',
-      color: chain.brandColor ? '#fff' : '#333'
-    }}
-  >
-    {chain.name.charAt(0)}
-  </div>
-</div>
+                <div
+                  className="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-2xl font-bold shadow-sm"
+                  style={{
+                    backgroundColor: chain.brandColor || '#f5f5f5',
+                    color: chain.brandColor ? '#fff' : '#333'
+                  }}
+                >
+                  {chain.name.charAt(0)}
+                </div>
+              </div>
 
               <h3 className="font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors mb-1">
                 {chain.name}
@@ -300,5 +316,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }

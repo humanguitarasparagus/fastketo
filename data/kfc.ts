@@ -7,6 +7,7 @@ export const kfcData: Chain = {
   logo: '/logos/kfc.svg',
   description: "KFC UK is challenging for keto due to breaded chicken (no grilled option available in UK). Your best bets are Hot Wings, Original Recipe pieces eaten carefully, and side salad. Portions need to be controlled.",
   ketoFriendly: 'moderate',
+  chainType: 'fast-food',
   website: 'https://www.kfc.co.uk',
   brandColor: '#E4002B',
   menuLastUpdated: '2026-02-01',

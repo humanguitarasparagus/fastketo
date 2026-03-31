@@ -7,6 +7,7 @@ export const burgerkingData: Chain = {
   logo: '/logos/burgerking.svg',
   description: "Burger King UK is manageable for keto with one simple rule: no bun, no ketchup, every time. All flame-grilled beef patties are zero carbs. Unlike US locations, UK doesn't offer grilled chicken or lettuce wraps - your bunless burger arrives in a box with a fork.",
   ketoFriendly: 'good',
+  chainType: 'fast-food',
   website: 'https://www.burgerking.co.uk',
   brandColor: '#D62300',
   menuLastUpdated: '2020-03-01',

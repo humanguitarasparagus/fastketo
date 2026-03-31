@@ -7,6 +7,7 @@ export const greggsData: Chain = {
   logo: '/logos/greggs.svg',
   description: "Greggs is the hardest chain for keto - it's built around pastry, bread, and bakes. There's no 'without the bun' hack here. But there are two things worth knowing: the Free Range Egg Pot (1.3g carbs, hidden in the fridge) and black Americano. Most of the time, the keto answer at Greggs is 'get a coffee and move on'.",
   ketoFriendly: 'poor',
+  chainType: 'fast-food',
   website: 'https://www.greggs.co.uk',
   brandColor: '#005EB8',
   menuLastUpdated: '2026-03-01',

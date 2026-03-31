@@ -7,6 +7,7 @@ export const yosushiData: Chain = {
   logo: '/logos/yosushi.svg',
   description: "YO! Sushi is excellent for keto if you ignore the conveyor belt. Treat it like Japanese tapas, not a sushi restaurant. Order sashimi + hot dishes without rice. CRITICAL: Sashimi (0.8g) vs Nigiri (14g per piece) - they look identical but Nigiri has rice underneath. The spinach poké base (0.8g) is a hidden gem.",
   ketoFriendly: 'good',
+  chainType: 'sushi',
   website: 'https://yosushi.com',
   brandColor: '#E20714',
   menuLastUpdated: '2024-09-01',

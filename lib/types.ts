@@ -4,6 +4,8 @@ export type MenuCategory = 'breakfast' | 'burgers' | 'chicken' | 'salads' | 'sid
 
 export type Availability = 'all-day' | 'breakfast' | 'lunch' | 'dinner';
 
+export type ChainType = 'fast-food' | 'pub-chains' | 'cafes' | 'casual-dining' | 'sushi';
+
 export interface Nutrition {
   servingSize: string;
   calories: number;
@@ -42,13 +44,14 @@ export interface Chain {
   logo: string;
   description: string;
   ketoFriendly: 'excellent' | 'good' | 'moderate' | 'poor';
+  chainType: ChainType;
   website: string;
   brandColor?: string;
   menuLastUpdated: string;
   categories: MenuCategory[];
-  topPicks: string[]; // Array of item IDs
+  topPicks: string[];
   items: MenuItem[];
-   faqs?: FAQ[]; 
+  faqs?: FAQ[];
   howToOrder?: string;
 }
 

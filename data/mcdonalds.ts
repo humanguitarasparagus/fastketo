@@ -7,6 +7,7 @@ export const mcdonaldsData: Chain = {
   logo: '/logos/mcdonalds.svg',
   description: "McDonald's offers surprisingly good keto options when you skip the buns. Focus on burgers without buns, grilled chicken salads, and breakfast items.",
   ketoFriendly: 'good',
+  chainType: 'fast-food',
   website: 'https://www.mcdonalds.com/gb/en-gb.html',
   brandColor: '#FFC72C',
   menuLastUpdated: '2026-01-15',

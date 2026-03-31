@@ -7,6 +7,7 @@ export const pretData: Chain = {
   logo: '/logos/pret.svg',
   description: "Pret is a genuine keto revelation. The menu looks carb-heavy (baguettes, pastries), but Pret has quietly built one of the best selections of grab-and-go protein pots in the UK. The Smoked Salmon & Egg Protein Pot (2g carbs, £4.50) is an elite keto option. The trick is knowing which section to look at.",
   ketoFriendly: 'good',
+  chainType: 'cafes',
   website: 'https://www.pret.co.uk',
   brandColor: '#7C2529',
   menuLastUpdated: '2026-03-01',

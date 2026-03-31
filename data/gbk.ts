@@ -7,6 +7,7 @@ export const gbkData: Chain = {
   logo: '/logos/gbk.svg',
   description: "GBK has the best-branded bunless system in the UK - just say 'GO NAKED' and the kitchen knows exactly what to do. Premium British grass-fed, dry-aged beef. Classic Double GO NAKED = 74g protein, ~10-14g carbs. Note: Homeslaw has pomegranate seeds (~9-14g carbs) - it's not zero-carb but very manageable.",
   ketoFriendly: 'excellent',
+  chainType: 'casual-dining',
   website: 'https://www.gbk.co.uk',
   brandColor: '#E31E24',
   menuLastUpdated: '2026-03-01',

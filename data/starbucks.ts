@@ -7,6 +7,7 @@ export const starbucksData: Chain = {
   logo: '/logos/starbucks.svg',
   description: "Starbucks UK is customization-first - the right order and wrong order are separated entirely by what you ask for. Most keto Starbucks advice is US-specific and doesn't work in UK stores. The good news: egg bites (under 6g carbs) make this a genuine breakfast stop, not just drinks.",
   ketoFriendly: 'good',
+  chainType: 'cafes',
   website: 'https://www.starbucks.co.uk',
   brandColor: '#00704A',
   menuLastUpdated: '2025-03-01',

@@ -7,6 +7,7 @@ export const tortillaData: Chain = {
   logo: '/logos/tortilla.svg',
   description: "Tortilla is the best keto fast food chain in the UK. Build-your-own Chipotle-style format means you skip the wrap, skip the rice, and build a bowl or salad from fresh, low-carb ingredients. The Protein Pot (7.1g carbs, 41.6g protein) is the single best keto item across ALL chains on FastKeto.",
   ketoFriendly: 'excellent',
+  chainType: 'fast-food',
   website: 'https://www.tortilla.co.uk',
   brandColor: '#E94E1B',
   menuLastUpdated: '2025-09-01',

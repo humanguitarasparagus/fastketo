@@ -7,6 +7,7 @@ export const dominosData: Chain = {
   logo: '/logos/dominos.svg',
   description: "Domino's is delivery/collection only - no salad bar, no modifications. The honest keto answer: order wings, ignore pizza. 7 Chicken Wings + Garlic & Herb Dip = 7.7g carbs, 38g protein - a genuinely good keto meal delivered to your door. The Garlic & Herb dip (0.5g carbs) is one of the best condiment finds on FastKeto.",
   ketoFriendly: 'moderate',
+  chainType: 'fast-food',
   website: 'https://www.dominos.co.uk',
   brandColor: '#0B648F',
   menuLastUpdated: '2026-02-01',

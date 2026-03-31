@@ -7,6 +7,7 @@ export const leonData: Chain = {
   logo: '/logos/leon.svg',
   description: "Leon is genuinely excellent for keto - arguably the best health-focused fast food stop on the UK high street. The Mediterranean menu (chargrilled proteins, olive oil, fresh veg) means keto options feel intentional. The Chargrilled Chicken Mezze (0.6g carbs) is the cleanest protein item on any UK high street.",
   ketoFriendly: 'excellent',
+  chainType: 'casual-dining',
   website: 'https://leon.co',
   brandColor: '#FF6B00',
   menuLastUpdated: '2026-01-01',

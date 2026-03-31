@@ -7,6 +7,7 @@ export const wetherspoonsData: Chain = {
   logo: '/logos/wetherspoons.svg',
   description: "Wetherspoons is excellent for keto if you know one rule: swap chips for side salad. 800+ pubs nationwide. 14oz Rump Steak = 90g protein (best single-dish protein across ALL chains). Cheap sit-down option with proper grill section. Tuesday Steak Night, Wednesday Chicken Club = keto wins.",
   ketoFriendly: 'excellent',
+  chainType: 'pub-chains',
   website: 'https://www.jdwetherspoon.com',
   brandColor: '#C8102E',
   menuLastUpdated: '2026-03-01',

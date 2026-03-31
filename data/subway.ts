@@ -7,6 +7,7 @@ export const subwayData: Chain = {
   logo: '/logos/subway.svg',
   description: "Subway is a hidden keto gem that people underestimate because the brand means 'sandwiches'. The unlock: any sub can be ordered as a salad bowl. The Italian B.M.T salad has just 3.8g carbs - genuinely one of the cleanest fast food keto options in the UK.",
   ketoFriendly: 'excellent',
+  chainType: 'fast-food',
   website: 'https://www.subway.com/en-GB',
   brandColor: '#00893E',
   menuLastUpdated: '2025-06-01',
