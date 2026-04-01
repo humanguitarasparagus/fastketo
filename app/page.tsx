@@ -12,7 +12,7 @@ function generateHomeSchema() {
     '@type': 'WebSite',
     name: 'FastKeto UK',
     url: 'https://fastketo.co',
-    description: 'The definitive UK guide to keto-friendly fast food. 18 major chains with exact nutrition data, ordering tips, and UK-specific advice.',
+    description: 'The definitive UK guide to keto-friendly fast food. 20 major chains with exact nutrition data, ordering tips, and UK-specific advice.',
     potentialAction: {
       '@type': 'SearchAction',
       target: 'https://fastketo.co/chains?search={search_term_string}',
@@ -178,50 +178,63 @@ export default function Home() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {topPicks.map((item) => (
-            <Link
-              key={item.id}
-              href={`/chains/${item.chainId}#${item.id}`}
-              className="card hover:shadow-md transition-shadow duration-200 group"
-            >
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors">
-                  {item.name}
-                </h3>
-                <KetoRatingBadge rating={item.ketoRating} />
-              </div>
-
-              <p className="text-neutral-600 text-sm mb-4 line-clamp-2">
-                {item.description}
-              </p>
-
-              <div className="flex items-center justify-between text-sm">
-                <div className="space-y-1">
-                  <div className="flex items-center space-x-3">
-                    <span className="font-mono font-semibold text-primary-600">
-                      {item.nutrition.netCarbs}g
-                    </span>
-                    <span className="text-neutral-500">net carbs</span>
+          {topPicks.map((item) => {
+            const chain = chains.find((c) => c.id === item.chainId)
+            return (
+              <Link
+                key={item.id}
+                href={`/chains/${item.chainId}#${item.id}`}
+                className="card hover:shadow-md transition-shadow duration-200 group"
+              >
+                {/* Chain identifier at the top */}
+                <div className="flex items-center gap-3 mb-3">
+                  <div
+                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0"
+                    style={{
+                      backgroundColor: chain?.brandColor || '#f5f5f5',
+                      color: chain?.brandColor ? '#fff' : '#333'
+                    }}
+                  >
+                    {chain?.name.charAt(0)}
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="font-mono font-semibold text-neutral-700">
-                      {item.nutrition.protein}g
-                    </span>
-                    <span className="text-neutral-500">protein</span>
-                  </div>
+                  <span className="font-bold text-neutral-900 text-sm">
+                    {chain?.name}
+                  </span>
                 </div>
 
-                <div className="text-right">
-                  <div className="text-neutral-500 text-xs mb-1">
-                    {chains.find((c) => c.id === item.chainId)?.name}
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors">
+                    {item.name}
+                  </h3>
+                  <KetoRatingBadge rating={item.ketoRating} />
+                </div>
+
+                <p className="text-neutral-600 text-sm mb-4 line-clamp-2">
+                  {item.description}
+                </p>
+
+                <div className="flex items-center justify-between text-sm">
+                  <div className="space-y-1">
+                    <div className="flex items-center space-x-3">
+                      <span className="font-mono font-semibold text-primary-600">
+                        {item.nutrition.netCarbs}g
+                      </span>
+                      <span className="text-neutral-500">net carbs</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <span className="font-mono font-semibold text-neutral-700">
+                        {item.nutrition.protein}g
+                      </span>
+                      <span className="text-neutral-500">protein</span>
+                    </div>
                   </div>
-                  <div className="text-primary-600 font-medium">
+                  <div className="text-primary-600 font-medium text-sm">
                     {item.priceRange}
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            )
+          })}
         </div>
       </section>
 
