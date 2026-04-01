@@ -195,13 +195,9 @@ export default async function ChainPage({
         <div className="container-custom">
           <div className="max-w-3xl">
             {/* Breadcrumb */}
-            <div className="text-sm text-neutral-600 mb-4">
-              <a href="/" className="hover:text-primary-600">Home</a>
-              <span className="mx-2">/</span>
-              <a href="/chains" className="hover:text-primary-600">Chains</a>
-              <span className="mx-2">/</span>
-              <span className="text-neutral-900">{chain.name}</span>
-            </div>
+            <a href="/" className="hover:text-primary-600">Home</a>
+<span className="mx-2">/</span>
+<span className="text-neutral-900">{chain.name}</span>
 
             <div className="flex items-start justify-between mb-4">
               <h1 className="text-4xl font-bold text-primary-900">

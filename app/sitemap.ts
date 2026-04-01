@@ -11,12 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://fastketo.co/chains',
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
       url: 'https://fastketo.co/about',
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
@@ -36,6 +30,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
+  // Category pages
+  const categoryPages = [
+    'fast-food',
+    'pub-chains',
+    'cafes',
+    'casual-dining',
+    'sushi',
+  ].map((category) => ({
+    url: `https://fastketo.co/${category}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
   // Dynamic chain pages
   const chainPages = chains.map((chain) => ({
     url: `https://fastketo.co/chains/${chain.slug}`,
@@ -44,5 +52,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...chainPages]
+  return [...staticPages, ...categoryPages, ...chainPages]
 }

@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-            {/* Google Analytics */}
+      {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-SBZS29F794"
         strategy="afterInteractive"
@@ -44,13 +44,10 @@ export default function RootLayout({
         <nav className="border-b border-neutral-200 bg-white">
           <div className="container-custom py-4">
             <div className="flex items-center justify-between">
-             <a href="/" className="flex items-center space-x-2">
-  <img src="/images/fastketo-logo.png" alt="FastKeto" className="h-14" />
-</a>
+              <a href="/" className="flex items-center space-x-2">
+                <img src="/images/fastketo-logo.png" alt="FastKeto" className="h-14" />
+              </a>
               <div className="flex items-center space-x-6">
-                <a href="/chains" className="text-neutral-700 hover:text-primary-500 transition-colors">
-                  Chains
-                </a>
                 <a href="/guides" className="text-neutral-700 hover:text-primary-500 transition-colors">
                   Guides
                 </a>
