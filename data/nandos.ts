@@ -5,7 +5,7 @@ export const nandosData: Chain = {
   name: "Nando's",
   slug: 'nandos',
   logo: '/logos/nandos.svg',
-  description: "Nando's is the best keto fast food chain in the UK. Flame-grilled chicken with virtually zero carbs, and all PERi-PERi spice levels (Lemon & Herb to Extra Hot) are keto-safe. You can eat a full, satisfying meal here and stay firmly in ketosis.",
+  description: "Nando's is one of the most keto-friendly fast food chains in the UK. Flame-grilled chicken forms the base of almost every meal — virtually zero carbs, high protein, and every PERi-PERi spice level from Lemon & Herb to Extra Hot is keto-safe. With the right choices you can eat a full, satisfying meal at Nando's and stay comfortably in ketosis.",
   ketoFriendly: 'excellent',
   chainType: 'casual-dining',
   website: 'https://www.nandos.co.uk',
