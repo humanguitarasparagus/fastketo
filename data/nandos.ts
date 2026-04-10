@@ -341,4 +341,30 @@ export const nandosData: Chain = {
       source: 'Nando\'s UK 2026 nutritional data',
     },
   ],
+  faqs: [
+    {
+      question: 'What can I eat at Nando\'s on keto?',
+      answer: 'Nando\'s is one of the easiest UK fast food chains for keto. Order any flame-grilled chicken — half chicken, wings, butterfly breast, or boneless thighs — at any PERi-PERi spice level. All spice levels are keto-safe. Add keto-friendly sides like Tenderstem Broccoli (2g net carbs), Rainbow Slaw (7g), or Halloumi (3g). Avoid chips, corn on the cob, garlic bread, and the Portuguese roll.',
+    },
+    {
+      question: 'Are Nando\'s PERi-PERi sauces keto?',
+      answer: 'Yes — all PERi-PERi spice levels (Lemon & Herb, Medium, Hot, Extra Hot) are keto-safe with 0-2g carbs per serving. The marinades used in cooking are also keto-safe. You can order any heat level without affecting your carb count.',
+    },
+    {
+      question: 'What are the best sides at Nando\'s for keto?',
+      answer: 'The best keto sides at Nando\'s are Tenderstem Broccoli (2g net carbs), Rainbow Slaw (7g net carbs), Halloumi (3g net carbs), Avocado (2g net carbs), and the Mediterranean Salad. Avoid chips, corn on the cob, garlic bread, mash, and the Portuguese roll.',
+    },
+    {
+      question: 'Is Nando\'s corn on the cob keto?',
+      answer: 'No — corn on the cob is one of the highest-carb sides at Nando\'s at around 25g net carbs per serving. It\'s one of the most common keto mistakes at Nando\'s. Always swap it for Tenderstem Broccoli or Rainbow Slaw instead.',
+    },
+    {
+      question: 'Does Nando\'s do lettuce wraps?',
+      answer: 'Nando\'s doesn\'t officially offer lettuce wraps. However, you can order any chicken without a roll and ask for extra lettuce on the side. The butterfly breast and boneless thighs work well as standalone items without any bread.',
+    },
+    {
+      question: 'What should I avoid at Nando\'s on keto?',
+      answer: 'The main items to avoid are chips (around 40g carbs), corn on the cob (25g carbs), garlic bread, the Portuguese roll, mash, and any macho peas. Stick to grilled chicken with PERi-PERi seasoning and low-carb sides for a fully keto-safe meal.',
+    },
+  ],
 };

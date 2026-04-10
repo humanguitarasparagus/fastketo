@@ -207,4 +207,30 @@ export const kfcData: Chain = {
       source: 'KFC UK nutrition PDF February 2026',
     },
   ],
+  faqs: [
+    {
+      question: 'What can I eat at KFC on keto?',
+      answer: 'The best keto options at KFC UK are chicken wings — they have no coating and are naturally low carb at around 0g net carbs. Avoid all original recipe and extra crispy chicken pieces as the coating adds significant carbs. KFC UK does not offer grilled chicken, unlike KFC in the US.',
+    },
+    {
+      question: 'Does KFC UK have grilled chicken?',
+      answer: 'No — KFC UK does not stock grilled chicken. This is a key difference from KFC in the US where grilled chicken is widely available. In the UK, wings are the only keto-safe option as they have minimal coating compared to other pieces.',
+    },
+    {
+      question: 'Are KFC wings keto?',
+      answer: 'Yes — KFC wings are the standout keto item at KFC UK. They have virtually no breading compared to other KFC pieces, making them by far the lowest carb option on the menu. Order a large portion of wings as your main keto strategy.',
+    },
+    {
+      question: 'What sauces are keto-safe at KFC?',
+      answer: 'Avoid all KFC dipping sauces as they are high in sugar — BBQ, sweet chilli, and tomato ketchup are all off limits. Stick to salt and pepper seasoning only. The Colonel\'s sauce and gravy are also high carb.',
+    },
+    {
+      question: 'Can I eat KFC on a ketogenic diet?',
+      answer: 'Yes, but your options are very limited compared to other UK fast food chains. Wings are your only reliable keto choice. KFC is rated moderate for keto overall because the menu relies heavily on breaded chicken which is not keto-friendly.',
+    },
+    {
+      question: 'What should I avoid at KFC on keto?',
+      answer: 'Avoid all original recipe and extra crispy chicken pieces — the coating adds 15-20g carbs per piece. Also avoid all sides: chips, beans, coleslaw with dressing, corn, and all KFC burgers and wraps. Popcorn chicken is also very high carb.',
+    },
+  ],
 };

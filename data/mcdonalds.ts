@@ -175,4 +175,30 @@ export const mcdonaldsData: Chain = {
       source: "McDonald's UK nutrition calculator",
     },
   ],
+  faqs: [
+    {
+      question: 'What can I eat at McDonald\'s on keto?',
+      answer: 'The best keto strategy at McDonald\'s UK is to order any burger without the bun. The Double Quarter Pounder with Cheese without the bun is the top pick — around 5g net carbs and 49g protein. You can also order grilled chicken without the bun, or a side salad without dressing.',
+    },
+    {
+      question: 'Can I order a bunless burger at McDonald\'s UK?',
+      answer: 'Yes — simply ask for your burger without the bun when ordering. McDonald\'s UK staff are used to this request. The burger will be served in a box without the bun. All burger patties and cheese are keto-safe — avoid ketchup and ask for mustard or mayo only.',
+    },
+    {
+      question: 'Are McDonald\'s sauces keto-friendly?',
+      answer: 'Most McDonald\'s sauces are not keto-friendly. Ketchup, Big Mac sauce, and sweet and sour are all high in sugar. Stick to mustard or mayonnaise which are both low carb. Always ask for no ketchup when ordering a bunless burger.',
+    },
+    {
+      question: 'Is McDonald\'s breakfast keto-friendly?',
+      answer: 'Yes — the breakfast menu has strong keto options. Order a sausage and egg muffin without the muffin, or ask for scrambled eggs and a sausage patty on their own. Bacon and eggs are also available. Avoid hash browns, pancakes, and all breakfast muffins with the bread.',
+    },
+    {
+      question: 'What are the lowest carb options at McDonald\'s UK?',
+      answer: 'The lowest carb options are the grilled chicken without bun (around 2g net carbs), a plain beef patty without bun, and side salad without dressing. The Double Quarter Pounder with Cheese without bun is the best balance of low carbs and high protein at around 5g net carbs and 49g protein.',
+    },
+    {
+      question: 'What should I avoid at McDonald\'s on keto?',
+      answer: 'Avoid all burger buns, wraps, and McFlurries. French fries are one of the highest carb items at around 40g per medium portion. Also avoid all milkshakes, fruit bags, apple pie, and any limited edition items with sauces or coatings. Stick to plain bunless burgers and water or black coffee.',
+    },
+  ],
 };
