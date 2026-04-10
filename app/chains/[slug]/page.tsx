@@ -221,7 +221,7 @@ export default async function ChainPage({
             <div className="bg-white rounded-lg p-6 shadow-sm border border-neutral-200">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
                 <div>
-                  <div className="text-neutral-500 mb-1">Best picks:</div>
+                  <div className="text-neutral-500 mb-1">Top picks:</div>
                   <div className="font-semibold text-neutral-900">
                     {chain.topPicks.length} items
                   </div>
