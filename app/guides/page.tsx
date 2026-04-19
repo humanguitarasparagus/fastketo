@@ -50,6 +50,33 @@ export default function GuidesPage() {
               </p>
             </div>
           </Link>
+          {/* Airports guide */}
+          <Link
+            href="/guides/keto-airports"
+            className="card hover:shadow-md transition-shadow duration-200 group overflow-hidden p-0"
+          >
+            <div className="h-48 overflow-hidden">
+              <img
+                src="/images/airport-hero.png"
+                alt="Keto at UK airports"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="p-6">
+              <div className="text-xs font-medium text-primary-600 mb-2 uppercase tracking-wide">
+                Travel
+              </div>
+              <h2 className="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors mb-2">
+                Keto at UK Airports
+              </h2>
+              <p className="text-neutral-600 text-sm">
+                Terminal-by-terminal guides to eating keto at UK airports. Heathrow covered in full, with Gatwick and Manchester coming soon.
+              </p>
+              <p className="text-primary-600 text-sm font-medium mt-4">
+                Read guide →
+              </p>
+            </div>
+          </Link>
 
           {/* Coming soon placeholders */}
           <div className="card opacity-50 cursor-not-allowed p-0 overflow-hidden">
